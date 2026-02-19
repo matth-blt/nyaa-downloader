@@ -1,7 +1,3 @@
-"""
-Tests complets pour nyaa_downloader.
-Usage: python test_comprehensive.py
-"""
 import sys
 import traceback
 from datetime import datetime
