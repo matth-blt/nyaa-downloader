@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=77.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nyaa-downloader"
+version = "1.0.0"
+description = "Python client to search and download torrents from nyaa.si"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+keywords = ["nyaa", "torrent"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia",
+]
+dependencies = [
+    "feedparser",
+    "anitopy",
+    "requests",
+    "libtorrent-windows-dll>=0.0.3",
+    "InquirerPy"
+]
+
+[project.scripts]
+nyaa-downloader = "nyaa_downloader.cli:main"
+nyaa-tui = "nyaa_tui:main"
+
+[project.urls]
+Homepage = "https://github.com/matth/nyaa-downloader"
+Issues = "https://github.com/matth/nyaa-downloader/issues"
+

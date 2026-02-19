@@ -1,0 +1,6 @@
+anitopy
+feedparser
+requests
+InquirerPy
+torrentp
+libtorrent-windows-dll>=0.0.3
