@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-# pyright: reportAttributeAccessIssue=false
-
 import sys
 import os
 import asyncio
@@ -11,7 +9,7 @@ from InquirerPy import inquirer
 from InquirerPy.base.control import Choice
 from InquirerPy.separator import Separator
 
-from nyaa_downloader import (
+from . import (
     NyaaAnime,
     NyaaSearcher,
     NyaaResult,
@@ -25,8 +23,8 @@ from nyaa_downloader import (
     LIBTORRENT_AVAILABLE,
     download_torrent_content,
 )
-from nyaa_downloader.metadata import JikanClient, AnimeMetadata
-from nyaa_downloader.errors import NetworkError, RateLimitError
+from .metadata import JikanClient, AnimeMetadata
+from .errors import NetworkError, RateLimitError
 
 
 def open_magnet(magnet_link: str):

@@ -28,7 +28,7 @@ dependencies = [
 
 [project.scripts]
 nyaa-downloader = "nyaa_downloader.cli:main"
-nyaa-tui = "nyaa_tui:main"
+nyaa-tui = "nyaa_downloader.tui:main"
 
 [project.urls]
 Homepage = "https://github.com/matth/nyaa-downloader"
